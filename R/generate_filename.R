@@ -10,5 +10,5 @@
 #' generate_filename(0104)
 
 generate_filename <- function(seed) {
-  file_name <- paste0(format(Sys.time(), "%Y-%m-%d-%H-%M"), "_seed_", seed, ".png")
+  file_name <- paste0(format(Sys.time(), "%Y-%m-%d-%H-%M"), "_seed_", seed, ".pdf")
 }
