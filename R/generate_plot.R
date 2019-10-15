@@ -17,14 +17,14 @@ generate_plot <- function(df, file_name, polar) {
   if (polar == TRUE) {
     plot <- df %>%
       ggplot2::ggplot(ggplot2::aes(x = x, y = y)) +
-      ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20) +
+      ggplot2::geom_path(alpha = 0.1, size = 0, shape = 20) +
       ggplot2::theme_void() +
       ggplot2::coord_fixed() +
       ggplot2::coord_polar()
   } else {
     plot <- df %>%
       ggplot2::ggplot(ggplot2::aes(x = x, y = y)) +
-      ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20) +
+      ggplot2::geom_path(alpha = 0.1, size = 0, shape = 20) +
       ggplot2::theme_void() +
       ggplot2::coord_fixed()
   }
