@@ -18,7 +18,7 @@
 ### create dataframe with starting points and transformed x and y depending on a formula
 generate_data <- function(formula) {
   print("generate data")
-  df <- seq(from = -pi, to = pi, by = 0.1) %>%
+  df <- seq(from = -pi, to = pi, by = 0.02) %>%
     expand.grid(x_i = ., y_i = .) %>%
     dplyr::mutate(!!!formula)
   return(df)
